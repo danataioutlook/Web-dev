@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Challenge: Wishlist</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+    <h1> My Favorite Foods</h1>
+       <ul>
+           <li> Pizza </li>
+           <li> Ramen </li>
+           <li> Patato </li>
+       </ul> 
+        
+      <img src ="https://images.app.goo.gl/M2sgdBaMyy9sey7E9"
+       alt = "Pizza" >
+           <ol>
+          <li> Pizza </li>
+           <li> Ramen </li>
+           <li> Patato </li>  
+        </ol>
+        
+    </body>
+</html>
