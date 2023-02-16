@@ -1,0 +1,34 @@
+//Task1
+alert( null || 2 || undefined );
+
+//Task2
+The answer: first 1, then 2.
+
+alert( alert(1) || 2 || alert(3) );
+The call to alert does not return a value. Or, in other words, it returns undefined.
+
+The first OR || evaluates its left operand alert(1). That shows the first message with 1.
+The alert returns undefined, so OR goes on to the second operand searching for a truthy value.
+The second operand 2 is truthy, so the execution is halted, 2 is returned and then shown by the outer alert.
+There will be no 3, because the evaluation does not reach alert(3).
+
+//Task3
+alert(1 && null && 2);
+
+Task4
+alert( alert(1) && alert(2) );
+
+Task 5
+// Runs.
+// The result of -1 || 0 = -1, truthy
+if (-1 || 0) alert( 'first' );
+
+// Doesn't run
+// -1 && 0 = 0, falsy
+if (-1 && 0) alert( 'second' );
+
+// Executes
+// Operator && has a higher precedence than ||
+// so -1 && 1 executes first, giving us the chain:
+// null || -1 && 1  ->  null || 1  ->  1
+if (null || -1 && 1) alert( 'third' );
